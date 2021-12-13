@@ -108,6 +108,9 @@ header{
     font-size: 24px;
     font-weight: 500;
 }
+.logo:first-letter{
+    color: var(--red);
+}
 .header-content{
     display: flex;
     height: calc(100vh - 60px);
