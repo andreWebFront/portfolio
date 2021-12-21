@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Junior Front-end Developer portfolio">
+    <meta property="og:image" content="#">
+    <meta property="og:title" content="Shilov Andrew Front-end">
+    <meta property="og:description" content="Junior Front-end Developer portfolio">
+    <!-- <meta author> -->
+    <title>Shilov Andrew</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-wrap" id="top">
+            <div class="container header-container">
+                <div class="logo">Shilov</div>
+                <nav>
+                    <ul class="header-nav__container flex">
+                        <li><a class="nav-links active" href="#top">Home</a></li>
+                        <li><a class="nav-links" href="#about-me">About me</a></li>
+                        <li><a class="nav-links" href="#projects">Projects</a></li>
+                        <li><a class="nav-links" href="#">Contacts</a></li>
+                        <li>
+                            <a class="nav-links flex red" href="tel:+375297198109">
+                                <ion-icon name="call-outline"></ion-icon>
+                                +375(29)719-81-09
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div><!-- container header-container --> 
+        </div> <!--  wrap -->
+        <div class="header-content flex">
+            <div class="container">
+                <div class="width-fourty">
+                    <div class="header-content__hello red">Hello</div>
+                    <div class="header-left__title uppercase">I'm Shilov Andrew</div>
+                    <div class="header-left__subtitle light-blue">Front-End Developer</div>
+                    <div class="header-left__buttons button">
+                        <a href="mailto:andrewshilov0@gmail.com">Hire me</a>
+                        <a href="#">Download CV</a>
+                    </div><!-- buttons -->
+                </div>
+                <div class="width-sixty"></div>
+            </div>
+        </div><!--   header-content -->
+    </header>
+    <main>
+        <section class="section about-me" id="about-me">
+            <div class="container flex gap">
+                <div class="width-sixty">
+                    <h2 class="section-title red">About me</h2>
+                    <!-- /.section-title -->
+                    <p class="article about-me__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium debitis,
+                        facere totam similique earum recusandae corrupti beatae, eligendi enim, incidunt fugit velit
+                        architecto voluptatibus alias. Sapiente illum, voluptate perspiciatis amet debitis non odit animi at
+                        cumque, ducimus reiciendis sit unde quia distinctio iure qui ipsam sunt voluptates. Expedita, ipsum
+                        enim.</p>
+                    <!-- /.about-me__text -->
+                </div>
+                <!-- /.about-me__left -->
+                <div class="width-fourty skills-wrap flex">
+                    <h2 class="section-subtitle light-blue">Soft skills:</h2>
+                    <!-- <ul class="skills-list">
+                        <li class="skill red"><ion-icon class="icon" name="logo-html5"></ion-icon>Html5.1</li>
+                        <li class="skill red"><ion-icon class="icon" name="logo-css3"></ion-icon>Css3</li>
+                        <li class="skill"><ion-icon class="icon" name="logo-nodejs"></ion-icon>Js</li>
+                        <li class="skill light-blue"><ion-icon name="logo-react"></ion-icon>React</li>
+                        <li class="skill light-blue"><ion-icon name="logo-codepen"></ion-icon>Webpack</li>
+                        <li class="skill"><ion-icon name="logo-figma"></ion-icon>Figma</li>
+                    </ul> -->
+                </div>
+                <!-- /.skills-wrap -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section about-me -->
+
+        <section class="my-skills">
+            <div class="container">
+                <ul class="skills-wrap flex">
+                    <li class="skill flex red">
+                        <div class="skill-inner">
+                            <div class="progress-level">75%</div>
+                            <ion-icon class="icon" name="logo-html5"></ion-icon>Html5.1
+                        </div>
+                        <!-- /.skill-inner -->
+                        <svg width="140px" height="140px">
+                            <circle class="html-circle" cx="70" cy="70" r="68" stroke-linecap="round"/>
+                        </svg>
+                    </li>
+                    <li class="skill flex red">
+                        <div class="skill-inner">
+                            <div class="progress-level">85%</div>
+                            <ion-icon class="icon" name="logo-css3"></ion-icon>Css3
+                        </div>
+                        <!-- /.skill-inner -->
+                        <svg width="140px" height="140px">
+                            <circle class="css-circle" cx="70" cy="70" r="68" stroke-linecap="round"/>
+                        </svg>
+                    </li>
+                    <li class="skill flex">
+                        <div class="skill-inner">
+                            <div class="progress-level">25%</div>
+                            <ion-icon class="icon" name="logo-nodejs"></ion-icon>Js
+                        </div>
+                        <!-- /.skill-inner -->
+                        <svg width="140px" height="140px">
+                            <circle class="js-circle" cx="70" cy="70" r="68" stroke-linecap="round"/>
+                        </svg>
+                    </li>
+                    <li class="skill flex light-blue">
+                        <div class="skill-inner">
+                            <div class="progress-level">2%</div>
+                            <ion-icon name="logo-react"></ion-icon>React
+                        </div>
+                        <!-- /.skill-inner -->
+                        <svg width="140px" height="140px">
+                            <circle class="react-circle" cx="70" cy="70" r="68" stroke-linecap="round"/>
+                        </svg>
+                    </li>
+                    <li class="skill flex light-blue">
+                        <div class="skill-inner">
+                            <div class="progress-level">5%</div>
+                            <ion-icon name="logo-codepen"></ion-icon>Webpack
+                        </div>
+                        <!-- /.skill-inner -->
+                        <svg width="140px" height="140px">
+                            <circle class="webpack-circle" cx="70" cy="70" r="68" stroke-linecap="round"/>
+                        </svg>
+                    </li>
+                    <li class="skill flex">
+                        <div class="skill-inner">
+                            <div class="progress-level">90%</div>
+                            <ion-icon name="logo-figma"></ion-icon>Figma
+                        </div>
+                        <!-- /.skill-inner -->
+                        <svg width="140px" height="140px">
+                            <circle class="figma-circle" cx="70" cy="70" r="68" stroke-linecap="round"/>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.my-skills -->
+
+        <section class="section projects" id="projects">
+            <div class="container">
+                <h2 class="section-title red">Projects</h2>
+                <!-- /.section-title -->
+                <div class="projects-header flex">
+                    <h3 class="projects-header__text">Some of my distinguished works</h3>
+                    <nav class="projects-header__nav">
+                        <ul>
+                            <li><a href="#" class="nav-links projects-header__link">All</a></li>
+                            <li><a href="#" class="nav-links projects-header__link">Layout</a></li>
+                            <li><a href="#" class="nav-links projects-header__link">Design</a></li>
+                            <li><a href="#" class="nav-links projects-header__link">SPA App</a></li>
+                            <li><a href="#" class="nav-links projects-header__link">More</a></li>
+                        </ul>
+                    </nav>
+                </div><!-- .projects-header -->
+                <div class="projects-items__wrap flex gap">
+                    <div class="projects-item filter layout">
+                        <div class="projects-item__img">
+                            <a href="projects/loving-flowers/index.html" target="_blank"><img src="img/project-items/layout/loving-flowers.png" alt="Loving flowers"></a>
+                        </div>
+                        <h3 class="projects-item__title red">Loving flowers</h3>
+                        <p class="projects-item__descr">Сайт под ключ для цветочного магазина</p>
+                        <div class="projects-item__tags">
+                            <a href="" class="tag item-tag">Layout</a>
+                        </div>
+                    </div>
+
+                    <div class="projects-item filter layout"> 
+                        <div class="projects-item__img">
+                            <a href="projects/runo/index.html" target="_blank"><img src="img/project-items/layout/runo.png" alt="Runo"></a>
+                        </div>
+                        <h3 class="projects-item__title red">Runo template</h3>
+                        <p class="projects-item__descr">Responsive layout from Figma</p>
+                        <div class="projects-item__tags">
+                            <a href="" class="tag item-tag">Layout</a>
+                        </div>
+                    </div>
+
+                    <div class="projects-item layout">
+                        <div class="projects-item__img">
+                           <a href="projects/handmade workshop/Handmade-Workshop/index.html" target="_blank"><img src="img/project-items/layout/handmade-workshop.png" alt="Handmade Workshop"></a>
+                        </div>
+                        <h3 class="projects-item__title red">Handmade Workshop</h3>
+                        <p class="projects-item__descr">Simple LP template for practice</p>
+                        <div class="projects-item__tags">
+                            <a href="" class="tag item-tag">Layout</a>
+                        </div>
+                    </div>
+
+                    <div class="projects-item filter layout">
+                        <div class="projects-item__img">
+                            <a href="#" target="_blank"><img src="img/project-items/layout/crypto-platform.png" alt="Crypto Platform"></a>
+                        </div>
+                        <h3 class="projects-item__title red"> Crypto Platform</h3>
+                        <p class="projects-item__descr">SPA using API</p>
+                        <div class="projects-item__tags">
+                            <a href="" class="tag item-tag">SPA</a>
+                            <a href="" class="tag item-tag">Layout</a>
+                            <a href="" class="tag item-tag">In progress</a>
+                        </div>
+                    </div>
+                    <div class="projects-item layout spa">
+                        <div class="projects-item__img">
+                            <a href="projects/goods-card/index.html" target="_blank"><img src="img/project-items/layout/goods-card.png" alt="Goods card"></a>
+                        </div>
+                        <h3 class="projects-item__title red">Goods Card</h3>
+                        <p class="projects-item__descr"></p>
+                        <div class="projects-item__tags">
+                            <a href="#" class="tag item-tag">Layout</a>
+                        </div>
+                    </div>
+                    <div class="projects-item">
+                        <div class="projects-item__img">
+                            <a href="projects/maincraft/index.html" target="_blank"><img src="img/project-items/layout/kings-craft.png" alt="Kings craft"></a>
+                        </div>
+                        <h3 class="projects-item__title red">King's craft</h3>
+                        <p class="projects-item__descr">My friend ask me to make some platform for his Minecraft server a few years ago.</p>
+                        <div class="projects-item__tags">
+                            <a href="#" class="tag item-tag">Layout</a>
+                            <a href="#" class="tag item-tag">SPA</a>
+                        </div>
+                    </div>
+
+                </div><!-- .projects-items__wrap -->
+                <div class="showmoreproducts flex">
+                    <a class="red" href="#">See all my projects<ion-icon name="arrow-forward-outline"></ion-icon></a>
+                </div>
+            </div><!-- /.container -->
+        </section><!-- /.section projects -->
+
+        <section class="contact-me">
+            <div class="container contact-me__wrap flex">
+                <div class="width-sixty">
+                    <h2 class="section-title red">Contact me</h2>
+                    <h3 class="fz24">Let's work together</h3>
+                    <ul class="contact-me__info">
+                        <li class="contact-info__item"><a class="flex" href="https://yandex.by/maps/153/brest/?ll=23.685708%2C52.093566&z=12" target="_blank"><ion-icon class="contact-info__icon red" name="location-outline"></ion-icon>Brest, Belarus</a></li>
+                        <li class="contact-info__item"><a class="flex"href="mailto:andrewshilov0@gmail.com"><ion-icon class="contact-info__icon red" name="mail-open-outline"></ion-icon>andrewshilov0@gmail.com</a></li>
+                        <li class="contact-info__item"><a class="flex" href="tel:+375297198109"><ion-icon class="contact-info__icon red" name="call-outline"></ion-icon>+375(29)719-81-09</a></li>
+                    </ul>
+                    <ul class="contact-me__socials gap flex">
+                        <li class="social-link__item"><a href="mailto:andrewshilov0@gmail.com" target="_blank"><ion-icon name="logo-google"></ion-icon>Gmail</a></li>
+                        <li class="social-link__item"><a href="https://github.com/andreWebFront" target="_blank"><ion-icon name="logo-github"></ion-icon>GitHub</a></li>
+                        <li class="social-link__item"><a href="https://ru.linkedin.com/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon>LinkedIn</a></li>
+                    </ul>
+                </div>
+                <!-- /.width-sixty -->
+                <div class="width-fourty">
+                    <form action="" class="contact-me__form">
+                        <input class="input-field" type="text" placeholder="Enter your name" required>
+                        <input class="input-field" type="text" placeholder="Enter your email">
+                        <input class="input-field" type="text" placeholder="Enter your phone" required>
+                        <select class="contact-me__select" name="service" id="">
+                            <option value="0" selected disabled>Choose service</option>
+                            <option value="">Layout</option>
+                            <option value="">SPA</option>
+                            <option value="">Design</option>
+                            <option value="">SPA</option>
+                            <option value="">Scripts</option>
+                        </select>                            
+                        <textarea name="" id="" rows="10"></textarea>
+                        <div class="form-button button">
+                            <a href="#">Send</a>
+                        </div>
+                    </form>
+                </div>
+                <!-- /.width-fourty -->
+            </div><!-- /.container -->
+        </section><!-- /.contact-me -->
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-text uppercase">&#169; made by Shilov Andrew</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- js libs -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script><!-- icons -->
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- main js -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+@media screen and (max-width: 1300px){
+    .container{
+        width: 97%;
+    }
+    .header-content__subtitle{
+        width: 100%;
+    }
+    .big-post{
+        width: 90%;
+        left: 50%;
+        /* transform: translateX(-50%); */
+    }
+    .header-content__title,
+    .big-post__text{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 720px) {
+    .header-row > nav{
+        display: none;
+    }
+    .header-content__subtitle{
+        flex-direction: column;
+        align-items: center;
+    }
+    .editors-pick__row{
+        overflow-x: scroll;
+    }
+}
+@media screen and (max-width: 600px) {
+    
+    .header-content{
+        justify-content: center;
+    }
+    .header-content__wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 480px) {
+    section{
+        max-width: 100%;
+    }
+    .container{
+        width: 90%;
+    }
+    .header-row nav{
+        display: none;
+    }
+    .header-content__wrap{
+        text-align: center;
+        max-width: 100%;
+    }
+    .mobile-header__nav::before,
+    .mobile-header__nav,
+    .mobile-header__nav::after{
+        content: "";
+        width: 30px;
+        height: 2px;
+        line-height: 80px;
+        background-color: var(--dark-color);
+    }
+    .mobile-header__nav{
+        gap: 18px;
+    }
+    .mobile-header__nav{
+        display: block;
+        color: var(--dark-color);
+    }
+
+    .tag-sorting__list{
+        overflow-x: scroll;
+    }
+    .blog-items__row, .footer-section__row{
+        flex-direction: column;
+    }
+    .blog-item{
+        width: 100%;
+    }
+    img{
+        display: block;
+        width: 100%;
+    }
+    .big-post .container{
+        margin: 0;
+    }
+    /* footer-section */
+    .footer-section{
+        height: 100%;
+    }
+    .footer-section__item{
+        margin: 15px;
+    }
+}
+
+
+
+
+
+
+
+/* - burger__menг - */
+/* input{display: none;}
+li{list-style: none;}
+div{margin: 30px;cursor: pointer;background-color: #333;width: 50px;aspect-ratio: 1;display: grid;place-items: center;transition: 0.4s ease;}
+div:hover > span{height: 0;}
+div:hover > span::before{transform: rotate(-45deg);}
+div:hover > span::after{transform: rotate(45deg);}
+span::before,
+span,
+span::after{
+  content: "";
+  height: 2px;
+  width: 25px;
+  background-color: darkgray;
+  transition: 0.4s ease;
+}
+span{
+  position: relative;
+  transition: none;
+}
+span::before{
+  position: absolute;
+  transform: translateY(-8px);
+}
+span::after{
+  position: absolute;
+  transform: translateY(8px);
+} */

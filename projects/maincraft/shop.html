@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>King's craft</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	
+	<header class="header" style="background: url(../images/backg.jpg) center fixed no-repeat;">
+		<nav class="header-nav">
+			<ul class="header-nav__list col-6">
+				<li class="header-nav__item"><a href="index.html">Главная</a></li>
+				<li class="header-nav__item"><a href="forum.html">Форум</a></li>
+				<li class="header-nav__item"><a href="#">Донат</a></li>
+				<li class="header-nav__item"><a href="shop.html">Магазин</a></li>
+				<li class="header-nav__item"><a href="support.html">Поддержка</a></li>
+				<li class="header-nav__item"><a href="rules.html">Правила</a></li>
+			</ul>
+			<li class="sign-up"><a onclick="wrapSignShow('block')" href="#">Войти</a></li>
+			<li class="sign-up"><a onclick="wrapSignShow('block')" href="#">Регистрация</a></li>
+			<div class="sign" onclick="showProfCard(); return false;">
+				<div class="sign-form">
+					<div class="credits-info">
+						<div class="balance-info">На счету:  <span id="balance"></span>руб</div>
+						<button class=" button donate-button">Пополнить счёт</button>
+					</div>
+					<ul class="sign-form__list">
+						<li class="sign-form__item"><a href="#">Мой профиль</a></li>
+						<li class="sign-form__item"><a href="#">Корзина</a></li>
+						<li class="sign-form__item"><a href="#">Лотерея</a></li>
+						<li class="sign-form__item"><a href="#">Реферальная система</a></li>
+						<li class="sign-form__item"><a href="#">Активация промо-кодов</a></li>
+						<li class="sign-form__item"><a href="#">Рейтинг игрoков</a></li>
+						<li class="sign-form__item"><a href="#">Выход</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<section class="shop-wrap container">
+			<h1 style="text-align: center;color: #fff;text-shadow: 2px 2px #000;">Магазин</h1>
+			<div class="categories-shop row">
+				<h2 class="filters" style="line-height: 25px; margin-left: 20px;color: #f90;">Фильтры:</h2>
+					<select  class="goods-cat">
+						<option class="cat-item" value="">Категория</option>
+						<option class="cat-item" onclick="filterSelection('all')" value="All">Все</option>
+						<option class="cat-item" onclick="filterSelection('blocks')" value="Blocks">Блоки</option>
+						<option class="cat-item" onclick="filterSelection('spells')" value="Spells">Зачарования</option>
+						<option class="cat-item" onclick="filterSelection('things')" value="Things">Предметы</option>
+						<option class="cat-item" onclick="filterSelection('Spauners')" value="Spauners">Спавнеры</option>
+					</select>
+					<!-- </li> -->
+					<div class="search-cat" style="margin-left: 45%"><input type="search" placeholder="Поиск по товарам"></div>
+				</div>
+				<!-- /.categories-shop -->
+					<div class="shop-row row">
+						<div class="shop-block col-3 blocks">
+							<div class="shop-item__title">Алмазный блок</div>
+							<div class="shop-card__img">
+								<img src="../images/shop-images/diamond-block.png" alt="Алмазный блок">
+							</div>
+							<!-- /.shop-card__img -->
+							<input type="" class="shop-card__quantity">
+							<!-- /.shop-card__descr -->
+							<button class="shop-card__button button">Купить</button>
+							<button class="shop-card__button button">Добавить в корзину</button>
+							<!-- /.shop-card__button -->
+						</div>
+						<!-- /.shop-block col-3 -->
+
+						<div class="shop-block col-3 blocks">
+							<div class="shop-item__title">Золотой блок</div>
+							<div class="shop-card__img">
+								<img src="../images/shop-images/gold-block.png" alt="Золотой блок">
+							</div>
+							<!-- /.shop-card__img -->
+							<input type="" class="shop-card__quantity">
+							<!-- /.shop-card__descr -->
+							<button class="shop-card__button button">Купить</button>
+							<button class="shop-card__button button">Добавить в корзину</button>
+							<!-- /.shop-card__button -->
+						</div>
+						<!-- /.shop-block col-3 -->
+
+						<div class="shop-block col-3 blocks">
+							<div class="shop-item__title">Железный блок</div>
+							<div class="shop-card__img">
+								<img src="../images/shop-images/iron-block.png" alt="Железный блок">
+							</div>
+							<!-- /.shop-card__img -->
+							<input type="" class="shop-card__quantity">
+							<!-- /.shop-card__descr -->
+							<button class="shop-card__button button">Купить</button>
+							<button class="shop-card__button button">Добавить в корзину</button>
+							<!-- /.shop-card__button -->
+						</div>
+						<!-- /.shop-block col-3 -->
+
+						<div class="shop-block col-3 blocks">
+							<div class="shop-item__title">
+								Изумрудный блок
+							</div>
+							<div class="shop-card__img">
+								<img src="../images/shop-images/emerald.png" alt="Изумрудный блок">
+							</div>
+							<!-- /.shop-card__img -->
+							<input type="" class="shop-card__quantity" placeholder="Тут типо нужно указать количество">
+							<!-- /.shop-card__descr -->
+							<button class="shop-card__button button">Купить</button>
+							<button class="shop-card__button button">Добавить в корзину</button>
+							<!-- /.shop-card__button -->
+						</div>
+						<!-- /.shop-block col-3 -->
+					</div>
+					<!-- /.shop-row row -->
+					<div class="shop-row row">
+						<div class="shop-block col-3 blocks">
+							<div class="shop-item__title">Алмазный блок</div>
+							<div class="shop-card__img">
+								<img src="../images/shop-images/diamond-block.png" alt="Алмазный блок">
+							</div>
+							<!-- /.shop-card__img -->
+							<input type="" class="shop-card__quantity">
+							<!-- /.shop-card__descr -->
+							<button class="shop-card__button button">Купить</button>
+							<button class="shop-card__button button">Добавить в корзину</button>
+							<!-- /.shop-card__button -->
+						</div>
+						<!-- /.shop-block col-3 -->
+
+						<div class="shop-block col-3 blocks">
+							<div class="shop-item__title">Золотой блок</div>
+							<div class="shop-card__img">
+								<img src="../images/shop-images/gold-block.png" alt="Золотой блок">
+							</div>
+							<!-- /.shop-card__img -->
+							<input type="" class="shop-card__quantity">
+							<!-- /.shop-card__descr -->
+							<button class="shop-card__button button">Купить</button>
+							<button class="shop-card__button button">Добавить в корзину</button>
+							<!-- /.shop-card__button -->
+						</div>
+						<!-- /.shop-block col-3 -->
+
+						<div class="shop-block col-3 blocks">
+							<div class="shop-item__title">Железный блок</div>
+							<div class="shop-card__img">
+								<img src="../images/shop-images/iron-block.png" alt="Железный блок">
+							</div>
+							<!-- /.shop-card__img -->
+							<input type="" class="shop-card__quantity">
+							<!-- /.shop-card__descr -->
+							<button class="shop-card__button button">Купить</button>
+							<button class="shop-card__button button">Добавить в корзину</button>
+							<!-- /.shop-card__button -->
+						</div>
+						<!-- /.shop-block col-3 -->
+
+						<div class="shop-block col-3 blocks">
+							<div class="shop-item__title">
+								Изумрудный блок
+							</div>
+							<div class="shop-card__img">
+								<img src="../images/shop-images/emerald.png" alt="Изумрудный блок">
+							</div>
+							<!-- /.shop-card__img -->
+							<input type="" class="shop-card__quantity" placeholder="Тут типо нужно указать количество">
+							<!-- /.shop-card__descr -->
+							<button class="shop-card__button button">Купить</button>
+							<button class="shop-card__button button">Добавить в корзину</button>
+							<!-- /.shop-card__button -->
+						</div>
+						<!-- /.shop-block col-3 -->
+					</div>
+					<!-- /.shop-row row -->
+					<div class="shop-row row">
+						<div class="shop-block col-3 blocks">
+							<div class="shop-item__title">Алмазный блок</div>
+							<div class="shop-card__img">
+								<img src="../images/shop-images/diamond-block.png" alt="Алмазный блок">
+							</div>
+							<!-- /.shop-card__img -->
+							<input type="" class="shop-card__quantity">
+							<!-- /.shop-card__descr -->
+							<button class="shop-card__button button">Купить</button>
+							<button class="shop-card__button button">Добавить в корзину</button>
+							<!-- /.shop-card__button -->
+						</div>
+						<!-- /.shop-block col-3 -->
+
+						<div class="shop-block col-3 blocks">
+							<div class="shop-item__title">Золотой блок</div>
+							<div class="shop-card__img">
+								<img src="../images/shop-images/gold-block.png" alt="Золотой блок">
+							</div>
+							<!-- /.shop-card__img -->
+							<input type="" class="shop-card__quantity">
+							<!-- /.shop-card__descr -->
+							<button class="shop-card__button button">Купить</button>
+							<button class="shop-card__button button">Добавить в корзину</button>
+							<!-- /.shop-card__button -->
+						</div>
+						<!-- /.shop-block col-3 -->
+
+						<div class="shop-block col-3 blocks">
+							<div class="shop-item__title">Железный блок</div>
+							<div class="shop-card__img">
+								<img src="../images/shop-images/iron-block.png" alt="Железный блок">
+							</div>
+							<!-- /.shop-card__img -->
+							<input type="" class="shop-card__quantity">
+							<!-- /.shop-card__descr -->
+							<button class="shop-card__button button">Купить</button>
+							<button class="shop-card__button button">Добавить в корзину</button>
+							<!-- /.shop-card__button -->
+						</div>
+						<!-- /.shop-block col-3 -->
+
+						<div class="shop-block col-3 blocks">
+							<div class="shop-item__title">
+								Изумрудный блок
+							</div>
+							<div class="shop-card__img">
+								<img src="../images/shop-images/emerald.png" alt="Изумрудный блок">
+							</div>
+							<!-- /.shop-card__img -->
+							<input type="" class="shop-card__quantity" placeholder="Тут типо нужно указать количество">
+							<!-- /.shop-card__descr -->
+							<button class="shop-card__button button">Купить</button>
+							<button class="shop-card__button button">Добавить в корзину</button>
+							<!-- /.shop-card__button -->
+						</div>
+						<!-- /.shop-block col-3 -->
+					</div>
+					<!-- /.shop-row row -->
+					<div class="shop-row row">
+						<div class="shop-block col-3 blocks">
+							<div class="shop-item__title">Алмазный блок</div>
+							<div class="shop-card__img">
+								<img src="../images/shop-images/diamond-block.png" alt="Алмазный блок">
+							</div>
+							<!-- /.shop-card__img -->
+							<input type="" class="shop-card__quantity">
+							<!-- /.shop-card__descr -->
+							<button class="shop-card__button button">Купить</button>
+							<button class="shop-card__button button">Добавить в корзину</button>
+							<!-- /.shop-card__button -->
+						</div>
+						<!-- /.shop-block col-3 -->
+
+						<div class="shop-block col-3 blocks">
+							<div class="shop-item__title">Золотой блок</div>
+							<div class="shop-card__img">
+								<img src="../images/shop-images/gold-block.png" alt="Золотой блок">
+							</div>
+							<!-- /.shop-card__img -->
+							<input type="" class="shop-card__quantity">
+							<!-- /.shop-card__descr -->
+							<button class="shop-card__button button">Купить</button>
+							<button class="shop-card__button button">Добавить в корзину</button>
+							<!-- /.shop-card__button -->
+						</div>
+						<!-- /.shop-block col-3 -->
+
+						<div class="shop-block col-3 blocks">
+							<div class="shop-item__title">Железный блок</div>
+							<div class="shop-card__img">
+								<img src="../images/shop-images/iron-block.png" alt="Железный блок">
+							</div>
+							<!-- /.shop-card__img -->
+							<input type="" class="shop-card__quantity">
+							<!-- /.shop-card__descr -->
+							<button class="shop-card__button button">Купить</button>
+							<button class="shop-card__button button">Добавить в корзину</button>
+							<!-- /.shop-card__button -->
+						</div>
+						<!-- /.shop-block col-3 -->
+
+						<div class="shop-block col-3 blocks">
+							<div class="shop-item__title">
+								Изумрудный блок
+							</div>
+							<div class="shop-card__img">
+								<img src="../images/shop-images/emerald.png" alt="Изумрудный блок">
+							</div>
+							<!-- /.shop-card__img -->
+							<input type="" class="shop-card__quantity" placeholder="Тут типо нужно указать количество">
+							<!-- /.shop-card__descr -->
+							<button class="shop-card__button button">Купить</button>
+							<button class="shop-card__button button">Добавить в корзину</button>
+							<!-- /.shop-card__button -->
+						</div>
+						<!-- /.shop-block col-3 -->
+					</div>
+					<!-- /.shop-row row -->
+					<div class="pagination-block">
+						<ul class="pagination">
+							<li class="page">< prev</li>
+							<li class="page">1</li>
+							<li class="page">2</li>
+							<li class="page">3</li>
+							<li class="page">4</li>
+							<li class="page">5</li>
+							<li class="page">6</li>
+							<li class="page">next ></li>
+						</ul>
+					</div>
+			</section>
+		</header>
+		<!-- /.header -->
+		<div onclick="signShow('none')" class="sign-up__wrap">
+		<form class="sign-up__form" style="padding-top:10px">
+			<h3 style="color: #ff9700;margin: 20px;">King's craft</h3>
+			<div class="sign-inputs">
+				<div class="sign-input">
+					<input class="sign-up__login" type="text" name="username" placeholder="Введите логин">
+				</div>
+				<div class="sign-input">
+					<input class="sign-up__pass" type="password" name="password" placeholder="Введите пароль">
+				</div>
+				<input class="sign-up__button" type="submit" name="submit" value="ВОЙТИ"><br>
+				<a class="forg_pass" href="#">Восстановить пароль</a>
+			</div>
+			<div class="sign-social">
+				<div class="sign-social__item"><a href=""><img width="22px" src="../images/social/vk.png" alt="VKontakte"></a> </div>
+				<div class="sign-social__item"><a href=""><img width="22px" src="../images/social/google.png" alt="Google"></a></div>
+				<div class="sign-social__item"><a href=""><img width="18px" src="../images/social/facebook.png" alt="Facebook"></a></div>
+				<div class="sign-social__item"><a href=""><img width="18px" src="../images/social/telegram.png" alt="Telegram"></a></div>
+			</div>
+		</form>
+	</div>
+		<script src="js/script.js"></script>
+	</body>
+	</html>
