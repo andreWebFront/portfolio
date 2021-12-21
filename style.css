@@ -1,5 +1,6 @@
 :root {
     --blue: #0E1630;
+    --hover-blue: #171F38;
     --red: #EB4A4A;
     --white: #fff;
     --light-blue: #808DAD;
@@ -9,12 +10,7 @@
     color: var(--white);
 }
 *{scroll-behavior: smooth;font-family: 'Quicksand', sans-serif;}
-.red {
-    color: var(--red);
-}
-.light-blue{
-    color: var(--light-blue);
-}
+
 .uppercase{
     text-transform: uppercase;
 }
@@ -25,7 +21,7 @@
     gap: 20px;
 }
 .align{
-    vertical-align: sub;
+    align-items: center;
 }
 body {
     margin: 0;
@@ -36,7 +32,9 @@ body {
     width: 1170px;
     margin: 0 auto;
 }
-
+.show{
+    display: block;
+}
 .section-title{
     position: relative;
     left: 40px;
@@ -62,7 +60,7 @@ nav>ul>li {
     display: inline-block;
     margin: 0 20px;
 }
-.header-container > ul>li:nth-child(4) {
+.header-container > nav > ul>li:nth-child(4) {
     border-right: 1px solid var(--light-blue);
     padding-right: 40px;
     margin-right: 0;
@@ -75,6 +73,10 @@ a{
     text-indent: 30px;
 }
 .icon{margin-right: 10px;}
+.nav-links:last-child{
+    align-items: center;
+    gap: 10px;
+}
 .nav-links {
     color: var(--light-blue);
     background: linear-gradient(270deg, var(--red), var(--light-blue));
@@ -145,29 +147,27 @@ header{
 }
 .header-left__buttons{
     display: flex;
-    gap: 20px
+    gap: 20px;
 }
-.header-left__buttons a{
-    padding: 10px;
+.button a{
+    background-color: var(--hover-blue);
+    padding: 10px 30px;
     border: 1px solid var(--red);
-    color:var(--white);
+    color: var(--white);
     border-radius: 5px;
-    transition: 0.7s ease;
 }
 .header-left__buttons a:hover{
-    /* color: var(--red); */
     background: linear-gradient(90deg, transparent, var(--red));
     background-repeat: no-repeat;
-    /* background-color: var(--light-blue); */
 }
 
 /* about-me */
-.about-me{
+/* .about-me{
     background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQLbvWGTFQh6OGWPfkLx2xBS_OP3oZJzQubA&usqp=CAU') no-repeat center;
     background-size: cover;
     padding: 50px 0px;
-}
-.skills-wrap{
+} */
+/* .skills-wrap{
     padding: 0 20px;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, .1);
@@ -176,8 +176,11 @@ header{
 }
 .skill{
     padding: 5px;
+} */
+.projects-items__wrap{
+    flex-wrap: wrap;
+    margin: 25px 0;
 }
-.projects-items__wrap{flex-wrap: wrap;}
 .projects-header{
     align-items: center;
     justify-content: space-between;
@@ -187,11 +190,244 @@ header{
 }
 .projects-item{
     height: 450px;
-    width: 350px;
+    width: calc(100% / 3.16);
     text-align: center;
-    border: 1px dashed var(--light-blue);
+    background-color: var(--hover-blue);
 }
 .projects-item__img a img{
-    width: 100%;
+    margin: 10px;
+    width: 330px;
     object-fit: cover;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+.projects-item__img a img:hover{
+    transform: scale(1.01);
+}
+.showmoreproducts{
+    justify-content: end;
+    align-items: center;
+}
+.fz24{
+    font-size: 24px;
+}
+.contact-me__socials{
+    margin-top: 30px;
+}
+.social-link__item a{
+    padding: 5px 10px;
+    color: var(--light-blue);
+    font-size: 18px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, .1);
+    transition: 0.7s ease;
+}
+.social-link__item{
+    transition: 0.7s ease;
+}
+.social-link__item:hover{
+    transform: scale(1.05);
+}
+.social-link__item a:hover{
+    color: var(--red);
+}
+.tag{
+    color: var(--white);
+    background: #2C3246;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.tag:hover{
+    color: var(--red);
+    background-color: transparent;
+    border: 1px solid var(--red);
+}
+
+/* CONTACT-ME */
+.contact-me{
+    margin: 30px 0;
+}
+.contact-info__item a{
+    align-items: center;
+    margin: 5px;
+    color: var(--light-blue);
+}
+.contact-info__icon{
+    border: 1px solid var(--red);
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.contact-me__form{
+    width: 100%;
+}
+.input-field{
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    color: var(--light-blue);
+    padding: 10px;
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    background-color: var(--hover-blue);
+}
+.contact-me__form textarea{
+    width: 100%;
+    margin: 10px 0;
+    resize: vertical;
+    box-sizing: border-box;
+    border-radius: 5px;
+    max-height: 300px;
+    background-color: var(--hover-blue);
+}
+.contact-me__select{
+    color: var(--light-blue);
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    background-color: var(--hover-blue);
+}
+.contact-me__select option{
+    padding: 10px;
+}
+.form-button{
+    margin-top: 20px;
+}
+
+footer{
+    margin: 50px 0;
+}
+
+
+
+.red {
+    color: var(--red);
+}
+.light-blue{
+    color: var(--light-blue);
+}
+
+
+/* test*/
+.my-skills{
+    position: relative;
+    margin: 20px 0;
+    padding: 0;
+}
+.my-skills:before,
+.my-skills:after{
+    content: '';
+    height: 50%;
+    width: 100px;
+    position: absolute;
+}
+.my-skills:before{
+    background: linear-gradient(90deg, var(--hover-blue), transparent);
+    left: 0;
+    top: 0;
+}
+.my-skills:after{
+    background: linear-gradient(90deg, transparent, var(--hover-blue));
+    bottom: 0;
+    right: 0;
+}
+.skills-wrap{
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
+}
+.skill{
+    height: 140px;
+    width: 140px;
+    /* border: 2px solid red; */
+    position: relative;
+    border-radius: 50%;
+    background-color: var(--hover-blue);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;    
+}
+.skill svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.skill svg circle{
+    fill: none;
+    stroke: var(--red);
+    stroke-width: 3px;
+}
+.html-circle{
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: htmlcircle 2s linear forwards;
+}
+.css-circle{
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: csscircle 2s linear forwards;
+}
+.js-circle{
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: jscircle 2s linear forwards;
+}
+.react-circle{
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: reactcircle 2s linear forwards;
+}
+.webpack-circle{
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: webpackcircle 2s linear forwards;
+}
+.figma-circle{
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: figmacircle 2s linear forwards;
+}
+.progress-level{
+    font-size: 32px;
+    font-weight: 700;
+}
+@keyframes htmlcircle{
+    100%{
+        stroke-dashoffset:  125;
+    }
+}
+
+@keyframes csscircle{
+    100%{
+        stroke-dashoffset: 100;
+    }
+}
+
+@keyframes jscircle{
+    100%{
+        stroke-dashoffset: 330;
+    }
+}
+
+@keyframes reactcircle{
+    100%{
+        stroke-dashoffset: 435;
+    }
+}
+
+@keyframes webpackcircle{
+    100%{
+        stroke-dashoffset: 430;
+    }
+}
+
+@keyframes figmacircle{
+    100%{
+        stroke-dashoffset: 80;
+    }
 }

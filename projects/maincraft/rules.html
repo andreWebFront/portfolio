@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>King's craft</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<header class="header">
+		<nav class="header-nav">
+			<ul class="header-nav__list col-6">
+				<li class="header-nav__item"><a href="index.html">Главная</a></li>
+				<li class="header-nav__item"><a href="forum.html">Форум</a></li>
+				<li class="header-nav__item"><a href="#">Донат</a></li>
+				<li class="header-nav__item"><a href="shop.html">Магазин</a></li>
+				<li class="header-nav__item"><a href="support.html">Поддержка</a></li>
+				<li class="header-nav__item"><a href="rules.html">Правила</a></li>
+			</ul>
+			<li class="sign-up" style="padding-right: 10px;"><a onclick="wrapSignShow('block')" href="#">Войти</a></li>
+			<li class="sign-up"><a onclick="wrapSignShow('block')" href="#">Регистрация</a></li>
+			<div class="sign" onclick="showProfCard(); return false;">
+				<div class="sign-form">
+				<div class="credits-info">
+					<div class="balance-info">На счету: <span id="balance" style="color: gold;"> 100</span>руб</div>
+					<button class=" button donate-button">Пополнить счёт</button>
+				</div>
+				<ul class="sign-form__list">
+
+					<li class="sign-form__item"><a href="#">Мой профиль</a></li>
+					<li class="sign-form__item"><a href="#">Лотерея</a></li>
+					<li class="sign-form__item"><a href="#">Реферальная система</a></li>
+					<li class="sign-form__item"><a href="#">Активация промо-кодов</a></li>
+					<li class="sign-form__item"><a href="#">Рейтинг игрoков</a></li>
+					<li class="sign-form__item"><a href="#">Выход</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+
+
+	<!-- /.header -->
+
+	<section class="rules container">
+		<div class="rules-wrap">
+			<div class="rules-title">
+				<h1>Правила</h1>
+			</div>
+			<div class="rules-container">
+				<div class="rules-block">
+					<div class="rul-num">1</div>
+					<div class="rul">
+							tra-ta-ta <br>
+							tra-ta-ta-ta
+						</div>
+						<div class="punishment">
+							Ethernal block
+						</div>
+				</div>
+				<div class="rules-block">
+					<div class="rul-num">2</div>
+					<div class="rul">
+							tra-ta-ta
+						</div>
+				</div>
+				<div class="rules-block">
+					<div class="rul-num">3</div>
+					<div class="rul">
+							tra-ta-ta
+						</div>
+				</div>
+			</div>
+		</div>
+</section>
+</header>
+<div onclick="signShow('none')" class="sign-up__wrap">
+		<form class="sign-up__form" style="padding-top:10px">
+			<h3 style="color: #ff9700;margin: 20px;">King's craft</h3>
+			<div class="sign-inputs">
+				<div class="sign-input">
+					<input class="sign-up__login" type="text" name="username" placeholder="Введите логин">
+				</div>
+				<div class="sign-input">
+					<input class="sign-up__pass" type="password" name="password" placeholder="Введите пароль">
+				</div>
+				<input class="sign-up__button" type="submit" name="submit" value="ВОЙТИ"><br>
+				<a class="forg_pass" href="#">Восстановить пароль</a>
+			</div>
+			<div class="sign-social">
+				<div class="sign-social__item"><a href=""><img width="22px" src="../images/social/vk.png" alt="VKontakte"></a> </div>
+				<div class="sign-social__item"><a href=""><img width="22px" src="../images/social/google.png" alt="Google"></a></div>
+				<div class="sign-social__item"><a href=""><img width="18px" src="../images/social/facebook.png" alt="Facebook"></a></div>
+				<div class="sign-social__item"><a href=""><img width="18px" src="../images/social/telegram.png" alt="Telegram"></a></div>
+			</div>
+		</form>
+	</div>
+<script src="js/script.js"></script>
+</body>
+</html>

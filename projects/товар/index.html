@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+	<script src="main.js"></script>
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+</head>
+<body>
+	<div class="page-wrapper">
+		<div class="product_card col-7">
+			<div class="names">
+				<img id="logo" src="images/logo.png" width="50px">
+			<h2>ZerexoN</h2><br>
+			<h1 id="name">KEB ECO <br>JACKET</h1>
+			</div>
+
+			<img id="product_img" width="300px" src="images/1.png">
+		</div>
+		<div class="char col-5">
+			<h4>COLOR</h4>
+			<div class="choose_color">
+				<div class="color white" onclick="change_it();"></div>
+				<div class="color light" onclick="change_it();"></div>
+				<div class="color deep" onclick="change_it();"></div>
+				<div class="color black" onclick="change_it();"></div>
+			</div>
+			<h4>SIZE</h4>
+				<ul>
+					<li class="size"><a href="">S</a></li>
+					<li class="size"><a href="">M</a></li>
+					<li class="size"><a href="">L</a></li>
+					<li class="size"><a href="">XL</a></li>
+				</ul>
+			<div class="input-title__block">
+				<h4>SLEEVE LENGTH:</h4>
+			<p class="range-value" style="color: #000;font-size: 20px;"></p>
+			</div>
+			<div class="polzunok">
+				<input id="input-range" oninput="sleeveValue()" type="range" min="0" max="50" step="2" class="range">
+			</div>
+			<div class="input-title__block">
+				<h4>CHEST:</h4>
+			<p class="range-value2" style="color: #000;font-size: 20px;"></p>
+			</div>
+			<div class="polzunok">
+				<input id="input-range2" oninput="chestValue()" type="range" class="range" min="0" max="50" step="5">
+			</div>
+			<button>UPDATE</button>
+		</div>
+	</div>
+</body>
+</html>

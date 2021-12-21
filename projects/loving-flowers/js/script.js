@@ -1,15 +1,15 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
 	//E-mail Ajax Send
-	$("form").submit(function() { //Change
+	$("form").submit(function () { //Change
 		var th = $(this);
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
 			data: th.serialize()
-		}).done(function() {
+		}).done(function () {
 			alert("Thank you!");
-			setTimeout(function() {
+			setTimeout(function () {
 				// Done Functions
 				th.trigger("reset");
 			}, 1000);
@@ -18,17 +18,17 @@ $(document).ready(function() {
 	});
 
 });
-$(function() {
+$(function () {
 
 	var header = $("#header"),
-					introH = $("#intro").innerHeight(),
-					scrollOffset = $(window);
+		introH = $("#intro").innerHeight(),
+		scrollOffset = $(window);
 
-// FIXED HEADER
-checkScroll(scrollOffset);
+	// FIXED HEADER
+	checkScroll(scrollOffset);
 
-	$(window).on('scroll', function(){
-	
+	$(window).on('scroll', function () {
+
 		scrollOffset = $(this).scrollTop();
 
 		checkScroll(scrollOffset);
@@ -37,7 +37,7 @@ checkScroll(scrollOffset);
 
 	function checkScroll() {
 
-		if(scrollOffset >= introH){
+		if (scrollOffset >= introH) {
 			header.addClass("fixed");
 		} else {
 			header.removeClass("fixed");
@@ -45,29 +45,29 @@ checkScroll(scrollOffset);
 
 	}
 
-// SMOOTH SCROLL
-$("[data-scroll]").on('click', function(event){
-	event.preventDefault();
+	// SMOOTH SCROLL
+	$("[data-scroll]").on('click', function (event) {
+		event.preventDefault();
 
-	var $this = $(this),
-					blockId = $(this).data('scroll'),
-					blockOffset = $(blockId).offset().top;
+		var $this = $(this),
+			blockId = $(this).data('scroll'),
+			blockOffset = $(blockId).offset().top;
 
-					$("#nav a").removeClass("active");
-					$this.addClass("active");
+		$("#nav a").removeClass("active");
+		$this.addClass("active");
 
-					$("html, body").animate({
-						scrollTop: blockOffset
-					}, 500);
+		$("html, body").animate({
+			scrollTop: blockOffset
+		}, 500);
 
-});
+	});
 
-// MENU ANV TOGGLE
-$("#nav_toggle").on('click', function(event){
-	event.preventDefault();
+	// MENU ANV TOGGLE
+	$("#nav_toggle").on('click', function (event) {
+		event.preventDefault();
 
-	$("#nav").toggleClass("active");
-});
+		$("#nav").toggleClass("active");
+	});
 
 
 });
